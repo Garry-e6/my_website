@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Garry Bakat's software development portfolio, technical projects, and interactive demonstrations.">
+  <title>Garry Bakat | Software Developer</title>
+  <link rel="icon" type="image/jpeg" href="images/icon.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/terminal.js" defer></script>
+  <script src="js/demos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Garry Bakat home">
+      <img src="images/icon.jpg" alt="" width="36" height="36">
+      <span>GB<span class="accent">.</span></span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#playground">Playground</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="icon-button" type="button"
+      aria-label="Switch colour theme" title="Switch day/night mode">
+      <span id="theme-symbol" aria-hidden="true">☀</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE DEVELOPMENT</p>
+        <h1>Software engineering.<br><span class="accent">Technical execution.</span></h1>
+        <p class="hero-description">
+          I'm Garry Bakat. I explore software engineering, Linux,
+          system design, and practical tools that solve real problems.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View projects <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>PAPUA NEW GUINEA</span>
+          <span>SOFTWARE / SYSTEMS / IMPLEMENTATION</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="images/hero.jpg" alt="Abstract architectural shapes and light">
+        <div class="image-caption">
+          <span>01 / THE PROCESS</span>
+          <span>Analysis. Implementation. Verification.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROJECT PORTFOLIO</p>
+          <h2>Projects<span class="accent">.</span></h2>
+        </div>
+        <p class="section-note">Selected implementations, technical demonstrations, and development experiments.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual project-visual-terminal">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <pre><span class="accent">$</span> system.init()
+<span class="muted">loading modules...</span>
+<span class="success">[ ready ]</span>
+<span class="accent">$</span> build --release</pre>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>01 / WEB DEMO</span><span>LIVE</span></div>
+            <h3>PNGID Demo</h3>
+            <p>A deployed web demonstration. Access the live instance to inspect its current functionality.</p>
+            <div class="tags"><span>Web</span><span>Demo</span></div>
+            <a class="text-link" href="https://png-id-demo-ex.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Open deployment <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual project-visual-code">
+            <span class="code-line"><b>01</b> <span class="code-purple">struct</span> <span class="code-green">System</span> {</span>
+            <span class="code-line"><b>02</b> &nbsp; <span class="code-purple">bool</span> reliable;</span>
+            <span class="code-line"><b>03</b> &nbsp; <span class="code-purple">void</span> <span class="code-green">improve</span>();</span>
+            <span class="code-line"><b>04</b> };</span>
+            <span class="code-line"><b>05</b> <span class="muted">// iterate carefully</span></span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>02 / EXPERIMENT</span><span>INTERACTIVE</span></div>
+            <h3>Code Playground</h3>
+            <p>Try a JSON formatter, insertion-sort visualizer, and colour generator directly in the browser.</p>
+            <div class="tags"><span>JavaScript</span><span>Algorithms</span></div>
+            <a class="text-link" href="#playground">Open playground <span>↓</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual project-visual-image">
+            <img src="images/portfolio.jpg" alt="Minimal abstract portfolio artwork">
+            <span class="visual-label">DESIGN / DEVELOPMENT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>03 / THIS SITE</span><span>RESPONSIVE</span></div>
+            <h3>Developer Portfolio</h3>
+            <p>A responsive web application implementing theme persistence, terminal simulation, and client-side utilities.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="text-link" href="#about">Technical overview <span>↓</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section playground-section" id="playground">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TECHNICAL DEMONSTRATIONS</p>
+          <h2>Interactive tools<span class="accent">.</span></h2>
+        </div>
+        <p class="section-note">Client-side demonstrations of data processing, algorithms, and interface behaviour.</p>
+      </div>
+
+      <div class="lab-grid">
+        <article class="lab-card terminal-card">
+          <div class="lab-title">
+            <div><span class="eyebrow">01 / COMMAND LINE</span><h3>Web Terminal</h3></div>
+            <span class="live-label">● ONLINE</span>
+          </div>
+          <p class="muted">A browser-based command simulator. Enter <code>help</code> to inspect supported commands.</p>
+          <div class="terminal-window">
+            <div class="terminal-bar"><span></span><span></span><span></span><small>garry@portfolio:~</small></div>
+            <div id="terminal-output" class="terminal-output" aria-live="polite">
+              <p>Garry's web terminal [Version 1.0]</p>
+              <p>Type <span class="accent">help</span> to list available commands.</p>
+            </div>
+            <form id="terminal-form" class="terminal-input-row">
+              <label for="terminal-input"><span class="success">visitor@gb</span> <span class="accent">~ $</span></label>
+              <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command">
+            </form>
+          </div>
+        </article>
+
+        <article class="lab-card">
+          <div class="lab-title">
+            <div><span class="eyebrow">02 / DATA</span><h3>JSON Formatter</h3></div>
+          </div>
+          <p class="muted">Validate JSON syntax and produce formatted or minified output.</p>
+          <label class="field-label" for="json-input">JSON INPUT</label>
+          <textarea id="json-input" rows="6" spellcheck="false">{"name":"Garry","interests":["C++","Linux","Systems"],"learning":true}</textarea>
+          <div class="tool-actions">
+            <button class="button button-primary" id="format-json" type="button">Format JSON</button>
+            <button class="button button-secondary" id="minify-json" type="button">Minify</button>
+          </div>
+          <p id="json-status" class="tool-status" aria-live="polite"></p>
+          <pre id="json-output" class="output-box">Formatted output will appear here.</pre>
+        </article>
+
+        <article class="lab-card">
+          <div class="lab-title">
+            <div><span class="eyebrow">03 / ALGORITHMS</span><h3>Insertion Sort</h3></div>
+          </div>
+          <p class="muted">Visualise insertion sort through sequential array operations.</p>
+          <div id="sort-bars" class="sort-bars" aria-label="Sorting visualization"></div>
+          <div class="tool-actions">
+            <button class="button button-secondary" id="shuffle-sort" type="button">New numbers</button>
+            <button class="button button-primary" id="run-sort" type="button">Sort</button>
+          </div>
+          <p id="sort-status" class="tool-status" aria-live="polite">Ready.</p>
+        </article>
+
+        <article class="lab-card">
+          <div class="lab-title">
+            <div><span class="eyebrow">04 / COLOUR</span><h3>Colour Explorer</h3></div>
+          </div>
+          <p class="muted">Select a colour and retrieve its hexadecimal representation.</p>
+          <div id="colour-preview" class="colour-preview"></div>
+          <label class="field-label" for="colour-picker">CHOOSE COLOUR</label>
+          <input id="colour-picker" class="colour-picker" type="color" value="#e5484d">
+          <div class="colour-value">
+            <code id="colour-hex">#E5484D</code>
+            <button class="button button-secondary" id="copy-colour" type="button">Copy HEX</button>
+          </div>
+          <p id="colour-status" class="tool-status" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-image">
+        <img src="images/portfolio.jpg" alt="Abstract artwork representing experimentation and systems">
+        <span class="image-caption">CURIOSITY INTO PRACTICE</span>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">PROFILE</p>
+        <h2>Software development.<br><span class="accent">Systems thinking.</span></h2>
+        <p>
+          I'm interested in how software works beneath the surface:
+          how components connect, where systems fail, and how they can
+          become more reliable.
+        </p>
+        <p>
+          My learning focuses on programming, Linux environments,
+          software architecture, and turning ideas into working prototypes.
+          This portfolio is a place to share experiments and demonstrate
+          what I can build.
+        </p>
+        <div class="principles">
+          <div><span>01</span><p>Implementation and testing</p></div>
+          <div><span>02</span><p>Fundamental technical knowledge</p></div>
+          <div><span>03</span><p>Verification and iteration</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Discuss a technical <span class="accent">project.</span></h2>
+      <p>For technical enquiries, project proposals, or professional collaboration, contact me directly.</p>
+      <div class="hero-actions contact-actions">
+        <a class="button button-primary" href="mailto:bakatgarry.e6@gmail.com">Email me ↗</a>
+        <a class="button button-secondary" href="tel:+67583824711">Call me: +675 8382 4711</a>
+        <button class="button button-secondary" id="copy-email" type="button">Copy email</button>
+        <button class="button button-secondary" id="copy-phone" type="button">Copy phone</button>
+      </div>
+      <p id="contact-status" class="tool-status" aria-live="polite">Available by email or phone.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">GB<span class="accent">.</span></a>
+    <p>Software portfolio | Garry Bakat</p>
+    <a href="#home" class="text-link">Back to top ↑</a>
+    <span id="footer-year"></span>
+  </footer>
+</body>
+</html>
